@@ -1,0 +1,12 @@
+[
+    {
+        "key": "cate1",
+        "name": "Category1",
+        "color": "#3AB54A"
+    },
+    {
+        "key": "cate2",
+        "name": "Category2",
+        "color": "#febf75"
+    }
+]
