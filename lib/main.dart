@@ -3,6 +3,7 @@ import 'package:flutter/services.dart'; // for transparent status bar
 import 'package:get/get.dart';
 import 'controller.dart';
 import 'routes.dart';
+import 'utils/colors.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.indigo,
+        primarySwatch: AppColors.WHITE,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       initialRoute: "/",

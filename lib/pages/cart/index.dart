@@ -1,32 +1,35 @@
 import 'package:flutter/material.dart';
+import 'package:sinae_flutter/widgets/appbar_action.dart';
+import 'package:sinae_flutter/widgets/custom_appbar.dart';
+import 'package:flutter_icons/flutter_icons.dart';
+import 'package:get/get.dart';
+import 'package:get/state_manager.dart';
+import 'package:sinae_flutter/pages/cart/controller.dart';
+import 'package:sinae_flutter/utils/colors.dart';
+import 'widgets/cart_list.dart';
+import 'widgets/cart_total.dart';
 
 class Cart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: Colors.white,
-        appBar: AppBar(
-          backgroundColor: Colors.black87,
-          elevation: 0.0,
-          title: Text('Cart'),
-          centerTitle: true,
-          leading: IconButton(
-            color: Colors.grey[800],
-            icon: Icon(Icons.arrow_back),
-            iconSize: 20,
-            onPressed: (){
-              Navigator.pop(context);
-            },
+    return GetBuilder<CartController>(
+      init: CartController(),
+      builder: (controller) {
+        return Scaffold(
+          backgroundColor: AppColors.LIGHT,
+          appBar: CustomAppBar(
+            "Cart",
+            leadings: [
+              CustomAppBarAction(
+                () => Get.back(),
+                Feather.arrow_left,
+              )
+            ],
           ),
-        ),
-        body: Center(
-            child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text('Cart')
-                ]
-            )
-        )
+          body: CartList(),
+          bottomNavigationBar: CartTotal(),
+        );
+      },
     );
   }
 }

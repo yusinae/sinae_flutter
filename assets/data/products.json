@@ -1,26 +1,74 @@
 [
     {
         "id": 1,
-        "name": "sample1",
+        "name": "광택감이 돋보이는 베이직 셔츠",
         "category": "cate1",
-        "price": 3.84,
+        "price": 16900,
         "image": "assets/images/img1.png",
-        "description": "Try running your application with flutter run. application has a blue toolbar. Then, without quitting the app, changing the primarySwatch below to Colors."
+        "description": "Use elevated buttons to add dimension to otherwise mostly flat layouts, e.g. in long busy lists of content, or in wide spaces. Avoid using elevated buttons on already-elevated content such as dialogs or cards."
     },
     {
         "id": 2,
-        "name": "sample2",
-        "category": "cate2",
-        "price": 18.57,
-        "image": "assets/images/img2.png",
-        "description": "green and then invoke hot reload (press r in the console where you ran flutter run, or simply save your changes to hot reload in a Flutter IDE)"
+        "name": "베이직 오픈카라 블라우스",
+        "category": "cate1",
+        "price": 18200,
+        "image": "assets/images/img1.png",
+        "description": "An elevated button is a label child displayed on a Material widget whose Material.elevation increases when the button is pressed. The label's Text and Icon widgets are displayed in style's ButtonStyle.foregroundColor and the button's filled background is the ButtonStyle.backgroundColor."
     },
     {
         "id": 3,
-        "name": "sample1",
+        "name": "링클프리 블라우스",
         "category": "cate1",
-        "price": 3.84,
+        "price": 18600,
         "image": "assets/images/img1.png",
-        "description": "Try running your application with flutter run. application has a blue toolbar. Then, without quitting the app, changing the primarySwatch below to Colors."
+        "description": "The static styleFrom method is a convenient way to create a elevated button ButtonStyle from simple values."
+    },
+    {
+        "id": 4,
+        "name": "3기장 H라인 스커트",
+        "category": "cate1",
+        "price": 21000,
+        "image": "assets/images/img1.png",
+        "description": "This class is extended by Border and BorderDirectional to provide concrete versions of four-sided borders using different conventions for specifying the sides."
+    },
+    {
+        "id": 5,
+        "name": "고퀄리티 슬림일자핏 슬랙스",
+        "category": "cate1",
+        "price": 21200,
+        "image": "assets/images/img1.png",
+        "description": "Abstract const constructor. This constructor enables subclasses to provide const constructors so that they can be used in const expressions."
+    },
+    {
+        "id": 6,
+        "name": "브이넥 배색 긴팔 가디건",
+        "category": "cate1",
+        "price": 16900,
+        "image": "assets/images/img1.png",
+        "description": "This class presents a set of methods that can be used from StatelessWidget.build methods and from methods on State objects."
+    },
+    {
+        "id": 7,
+        "name": "셔츠형 롱 플레어 원피스",
+        "category": "cate2",
+        "price": 26800,
+        "image": "assets/images/img2.png",
+        "description": "Each widget has its own BuildContext, which becomes the parent of the widget returned by the StatelessWidget.build or State.build function. (And similarly, the parent of any children for RenderObjectWidgets.)"
+    },
+    {
+        "id": 8,
+        "name": "프린팅 루즈핏 맨투맨",
+        "category": "cate2",
+        "price": 13200,
+        "image": "assets/images/img2.png",
+        "description": "In particular, this means that within a build method, the build context of the widget of the build method is not the same as the build context of the widgets returned by that build method."
+    },
+    {
+        "id": 9,
+        "name": "슬림핏 라운드넥 긴팔 티셔츠",
+        "category": "cate2",
+        "price": 11500,
+        "image": "assets/images/img2.png",
+        "description": "The carrot is rich in carotene, precursor of vitamin A, necessary for growth, bones development, sight, tissues maintenance, reproduction and in the hormonal system. Moreover, it is thought that it prevents cancer, apart from being rich in fiber and low in calories."
     }
 ]
