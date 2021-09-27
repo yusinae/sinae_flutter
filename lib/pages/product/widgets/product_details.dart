@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:sinae_flutter/models/product.model.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:get/get.dart';
+import 'package:sinae_flutter/models/product.model.dart';
 import 'package:sinae_flutter/pages/product/controller.dart';
-import 'package:sinae_flutter/utils/colors.dart';
 import 'package:sinae_flutter/widgets/cart_button.dart';
+import 'package:sinae_flutter/utils/colors.dart';
 
 class ProductDetails extends StatelessWidget {
   final ProductController controller = Get.find();
@@ -70,7 +70,7 @@ class ProductDetails extends StatelessWidget {
               children: <Widget>[
                 Expanded(
                   child: Text(
-                    this.product?.dollar ?? "0",
+                    this.product?.price_unit ?? "0",
                     style: TextStyle(
                       fontSize: 20,
                       color: AppColors.POINT,

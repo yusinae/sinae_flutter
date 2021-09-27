@@ -9,13 +9,15 @@ import 'widgets/list_products.dart';
 import 'widgets/list_categories.dart';
 
 class Home extends StatelessWidget {
+  const Home({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return GetBuilder<HomeController>(
       init: HomeController(),
       builder: (controller) {
         return Scaffold(
-          backgroundColor: AppColors.LIGHT,
+          backgroundColor: AppColors.BACKGROUND,
           appBar: CustomAppBar(
             "Sinae Mall",
             actions: [

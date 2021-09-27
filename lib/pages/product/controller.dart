@@ -4,7 +4,7 @@ import 'package:sinae_flutter/models/cart_item.model.dart';
 import 'package:sinae_flutter/models/product.model.dart';
 import 'package:sinae_flutter/utils/json.dart';
 
-import '../../controller.dart';
+import 'package:sinae_flutter/controller.dart';
 
 class ProductController extends GetxController {
   AppController appController = Get.find();
@@ -41,6 +41,8 @@ class ProductController extends GetxController {
     try {
       CartItemModel cartItem =
           appController.cartItems.value.firstWhere((cartItem) {
+            print(this.product.id);
+            print('아이디');
         return cartItem.product.id == this.product.id;
       });
       cartItem.incrementQuantity();

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sinae_flutter/utils/colors.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
+import 'package:sinae_flutter/utils/colors.dart';
 import 'package:sinae_flutter/controller.dart';
 import 'package:sinae_flutter/models/cart_item.model.dart';
 
@@ -13,7 +13,7 @@ class CartController extends GetxController {
     double fold = appController.cartItems.value.fold(0, (subtotal, cartItem) {
       return subtotal + cartItem.product.price * cartItem.quantity;
     });
-    return "U\$" + fold.toStringAsFixed(2);
+    return fold.toStringAsFixed(0) + "\원";
   }
 
   deleteItem(CartItemModel cartItemModel) {
@@ -26,14 +26,14 @@ class CartController extends GetxController {
     appController.cartItems.clear();
     Get.back();
     Get.snackbar(
-      "Placed",
+      "주문완료",
       "Order placed with success!",
       backgroundColor: AppColors.DARK,
       colorText: AppColors.WHITE,
       padding: EdgeInsets.all(15),
       snackPosition: SnackPosition.BOTTOM,
       margin: EdgeInsets.all(25),
-      icon: Icon(Feather.check, color: AppColors.LIGHT_POINT, size: 21),
+      icon: Icon(Feather.check, color: AppColors.SUB, size: 21),
     );
   }
 }

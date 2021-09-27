@@ -1,29 +1,25 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  // ignore: non_constant_identifier_names
-  static final MaterialColor PRIMARY_COLOR = _factoryColor(0xff2B3340);
+  static final MaterialColor MAIN = _factoryColor(0xff2B3340);
 
-  // ignore: non_constant_identifier_names
-  static final MaterialColor LIGHT = _factoryColor(0xfff4f4f8);
+  static final MaterialColor SUB = _factoryColor(0xff666666);
 
-  // ignore: non_constant_identifier_names
-  static final MaterialColor LIGHT_GREY = _factoryColor(0xffd8d8d8);
-
-  // ignore: non_constant_identifier_names
-  static final MaterialColor DARK = _factoryColor(0xff3a3a3a);
-
-  // ignore: non_constant_identifier_names
-  static final MaterialColor WHITE = _factoryColor(0xffffffff);
-
-  // ignore: non_constant_identifier_names
   static final MaterialColor POINT = _factoryColor(0xff333333);
 
-  // ignore: non_constant_identifier_names
-  static final MaterialColor LIGHT_POINT = _factoryColor(0xff666666);
+  static final MaterialColor LIGHT = _factoryColor(0xfff4f4f8);
 
-  // ignore: non_constant_identifier_names
+  static final MaterialColor DARK = _factoryColor(0xff3a3a3a);
+
+  static final MaterialColor GREY = _factoryColor(0xffd8d8d8);
+
+  static final MaterialColor WHITE = _factoryColor(0xffffffff);
+
+  static final MaterialColor BACKGROUND = _factoryColor(0xfff4f4f8);
+
   static final MaterialColor SHADOW = _factoryColor(0xffE7EAF0);
+
+  static final MaterialColor LINE = _factoryColor(0xD4D4D4);
 
   static MaterialColor hex(String hex) => AppColors._factoryColor(AppColors._getColorHexFromStr(hex));
 

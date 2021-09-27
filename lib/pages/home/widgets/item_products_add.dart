@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:sinae_flutter/models/product.model.dart';
-import 'package:sinae_flutter/utils/colors.dart';
 import 'package:get/get.dart';
+import 'package:sinae_flutter/models/product.model.dart';
+import 'package:sinae_flutter/pages/product/controller.dart';
+import 'package:sinae_flutter/utils/colors.dart';
 
 class ItemAdd extends StatelessWidget {
+  //final ProductController controller = Get.find();
   final ProductModel product;
   ItemAdd(this.product);
 
@@ -27,6 +29,7 @@ class ItemAdd extends StatelessWidget {
           ),
           onPressed: () =>
               Get.toNamed("/products/${this.product.id.toString()}"),
+              //controller.addProduct,
         ),
       ),
     );

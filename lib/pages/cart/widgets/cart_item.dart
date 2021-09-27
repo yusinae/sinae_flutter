@@ -42,7 +42,7 @@ class CartItem extends StatelessWidget {
               Row(
                 children: <Widget>[
                   Text(
-                    this.cartItem.product.dollar,
+                    this.cartItem.product.price_unit,
                     style: TextStyle(
                       fontSize: 15,
                       color: AppColors.POINT,
@@ -52,7 +52,7 @@ class CartItem extends StatelessWidget {
                   SizedBox(width: 10),
                   Obx(
                         () => Text(
-                      "${this.cartItem.quantity.toString()}개 ",
+                      "${this.cartItem.quantity.toString()}개",
                       style: TextStyle(
                         fontSize: 14,
                         color: AppColors.DARK,

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:get/get.dart';
-import 'package:sinae_flutter/pages/cart/controller.dart';
 import 'package:sinae_flutter/utils/colors.dart';
+import 'package:sinae_flutter/pages/cart/controller.dart';
 import 'package:sinae_flutter/widgets/cart_button.dart';
 
 class CartTotal extends StatelessWidget {
