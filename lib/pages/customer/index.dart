@@ -26,7 +26,9 @@ class Customer extends StatelessWidget {
               )
             ],
           ),
-          body: ListBoard()
+          body: Container(
+            child: ListBoard(),
+          ),
         );
       },
     );

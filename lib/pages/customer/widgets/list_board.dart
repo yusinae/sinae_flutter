@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sinae_flutter/models/board.model.dart';
 import 'package:get/get.dart';
 import 'package:sinae_flutter/utils/colors.dart';
 import 'package:sinae_flutter/pages/customer/controller.dart';
-import 'item_board.dart';
+import 'board_detail.dart';
 
 class ListBoard extends StatelessWidget {
   final CustomerController controller = Get.find();
@@ -14,14 +13,22 @@ class ListBoard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Obx(() {
       return SizedBox(
-        height: 80,
         child: ListView.separated(
-          padding: EdgeInsets.all(20),
+          padding: EdgeInsets.symmetric(vertical: 0, horizontal: 20),
           itemCount: controller.boardlist.length,
-          separatorBuilder: (context, index) => Divider(height: 20, color: AppColors.LINE),
+          separatorBuilder: (context, index) => Divider(height: 0, color: AppColors.LINE),
           itemBuilder: (context, index) {
-            print(controller.boardlist.value[index].title);
-            return ItemBoard(controller.boardlist.value[index]);
+            return ListTile(
+              title: Text(
+                controller.boardlist.value[index].title,
+                style: TextStyle(fontSize: 15.0,)),
+              onTap: (){
+                Get.to(BoardDetail(board: controller.boardlist.value[index]));
+              },
+              trailing: Icon(Icons.add, size: 14.0, color: AppColors.DARK),
+              contentPadding: EdgeInsets.symmetric(vertical: 5, horizontal: 0),
+              dense:true,
+            );
           },
         ),
       );
