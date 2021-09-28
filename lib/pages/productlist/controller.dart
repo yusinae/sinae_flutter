@@ -5,7 +5,7 @@ import 'package:sinae_flutter/controller.dart';
 import 'package:sinae_flutter/models/product.model.dart';
 import 'package:sinae_flutter/utils/json.dart';
 
-class HomeController extends GetxController {
+class ProductlistController extends GetxController {
   AppController appController = Get.find();
   RxList<CategoryModel> categories = RxList<CategoryModel>([]);
   RxList<ProductModel> products = RxList<ProductModel>([]);
@@ -16,7 +16,7 @@ class HomeController extends GetxController {
     return appController.cartItems.length;
   }
 
-  HomeController() {
+  ProductlistController() {
     loadCategories();
   }
 

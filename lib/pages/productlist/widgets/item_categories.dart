@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:sinae_flutter/models/category.model.dart';
-import 'package:sinae_flutter/pages/home/controller.dart';
+import 'package:sinae_flutter/pages/productlist/controller.dart';
 import 'package:sinae_flutter/utils/colors.dart';
 import 'package:get/get.dart';
 
 class ItemCategories extends StatelessWidget {
-  final HomeController controller = Get.find();
+  final ProductlistController controller = Get.find();
   final CategoryModel category;
   final bool selected;
 

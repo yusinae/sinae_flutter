@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:sinae_flutter/models/category.model.dart';
 import 'package:get/get.dart';
-
 import '../controller.dart';
 import 'item_categories.dart';
 
 class ListCategories extends StatelessWidget {
-  final HomeController controller = Get.find();
+  final ProductlistController controller = Get.find();
 
   ListCategories();
 

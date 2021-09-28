@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sinae_flutter/pages/home/controller.dart';
+import 'package:sinae_flutter/pages/productlist/controller.dart';
 
 import 'item_products.dart';
 
 class ListProducts extends StatelessWidget {
-  final HomeController controller = Get.find();
+  final ProductlistController controller = Get.find();
   final double itemHeight = 130;
   final double itemWidth = Get.width / 2 - 100;
 

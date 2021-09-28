@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sinae_flutter/widgets/custom_appbar.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:get/get.dart';
-import 'package:sinae_flutter/pages/home/controller.dart';
+import 'package:sinae_flutter/pages/productlist/controller.dart';
 import 'package:sinae_flutter/utils/colors.dart';
 import 'package:sinae_flutter/widgets/appbar_action.dart';
 import 'widgets/list_products.dart';
@@ -13,8 +13,8 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<HomeController>(
-      init: HomeController(),
+    return GetBuilder<ProductlistController>(
+      init: ProductlistController(),
       builder: (controller) {
         return Scaffold(
           backgroundColor: AppColors.BACKGROUND,
