@@ -8,8 +8,8 @@ import 'package:sinae_flutter/widgets/appbar_action.dart';
 import 'widgets/list_products.dart';
 import 'widgets/list_categories.dart';
 
-class Home extends StatelessWidget {
-  const Home({Key key}) : super(key: key);
+class Productlist extends StatelessWidget {
+  const Productlist({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
