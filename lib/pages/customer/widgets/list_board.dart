@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sinae_flutter/models/board.model.dart';
 import 'package:get/get.dart';
-import '../controller.dart';
+import 'package:sinae_flutter/utils/colors.dart';
+import 'package:sinae_flutter/pages/customer/controller.dart';
 import 'item_board.dart';
 
 class ListBoard extends StatelessWidget {
@@ -15,18 +16,12 @@ class ListBoard extends StatelessWidget {
       return SizedBox(
         height: 80,
         child: ListView.separated(
-          scrollDirection: Axis.horizontal,
-          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 25),
-          separatorBuilder: (BuildContext context, int index) => SizedBox(width: 50),
+          padding: EdgeInsets.all(20),
           itemCount: controller.boardlist.length,
-          itemBuilder: (_, index) {
-            BoardModel board = controller.boardlist.elementAt(index);
-            return Obx(() {
-              return ItemBoard(
-                board,
-                //board == controller.selectedBoard,
-              );
-            });
+          separatorBuilder: (context, index) => Divider(height: 20, color: AppColors.LINE),
+          itemBuilder: (context, index) {
+            print(controller.boardlist.value[index].title);
+            return ItemBoard(controller.boardlist.value[index]);
           },
         ),
       );

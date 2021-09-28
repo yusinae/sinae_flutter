@@ -13,6 +13,8 @@ class ItemBoard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(this.board);
+    print('item');
     return GestureDetector(
       //onTap: () => controller.selectBoard(board),
       child: Container(

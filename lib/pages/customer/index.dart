@@ -5,6 +5,7 @@ import 'package:sinae_flutter/pages/customer/controller.dart';
 import 'package:sinae_flutter/widgets/custom_appbar.dart';
 import 'package:sinae_flutter/widgets/appbar_action.dart';
 import 'package:sinae_flutter/utils/colors.dart';
+import 'widgets/list_board.dart';
 
 class Customer extends StatelessWidget {
   const Customer({Key key}) : super(key: key);
@@ -25,7 +26,7 @@ class Customer extends StatelessWidget {
               )
             ],
           ),
-          body: Text("고객센터")
+          body: ListBoard()
         );
       },
     );
