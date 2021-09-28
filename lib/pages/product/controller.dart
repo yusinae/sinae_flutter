@@ -32,6 +32,7 @@ class ProductController extends GetxController {
         image: item["image"],
         description: item["description"],
       ));
+      if(Get.arguments == "cart") addProduct();
     } catch (error) {
       print(error.toString());
     }
