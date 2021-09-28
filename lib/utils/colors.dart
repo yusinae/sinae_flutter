@@ -19,7 +19,7 @@ class AppColors {
 
   static final MaterialColor SHADOW = _factoryColor(0xffE7EAF0);
 
-  static final MaterialColor LINE = _factoryColor(0xD4D4D4);
+  static final MaterialColor LINE = _factoryColor(0xffD4D4D4);
 
   static MaterialColor hex(String hex) => AppColors._factoryColor(AppColors._getColorHexFromStr(hex));
 
