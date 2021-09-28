@@ -21,7 +21,7 @@ class ItemAdd extends StatelessWidget {
             elevation: 0.0,
           ),
           child: Icon(
-            Feather.eye,
+            Feather.shopping_bag,
             size: 18,
             color: AppColors.DARK,
           ),

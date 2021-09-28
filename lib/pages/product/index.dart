@@ -9,18 +9,12 @@ import 'package:sinae_flutter/widgets/product_image.dart';
 import 'widgets/product_details.dart';
 
 class Product extends StatelessWidget {
-  final String cart = Get.arguments;
-
   @override
   Widget build(BuildContext context) {
 
     return GetBuilder<ProductController>(
       init: ProductController(),
       builder: (controller) {
-        if(this.cart != null) {
-          //print(controller?.product?.name);
-          print(this.cart);
-        }
         return Scaffold(
           backgroundColor: AppColors.BACKGROUND,
           appBar: CustomAppBar(

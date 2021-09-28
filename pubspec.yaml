@@ -32,6 +32,7 @@ flutter:
     - assets/images/img2.png
     - assets/data/products.json
     - assets/data/categories.json
+    - assets/data/board.json
   fonts:
     - family: ArchitypeRenner
       fonts:

@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:sinae_flutter/widgets/custom_appbar.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:get/get.dart';
 import 'package:sinae_flutter/pages/productlist/controller.dart';
-import 'package:sinae_flutter/utils/colors.dart';
+import 'package:sinae_flutter/widgets/custom_appbar.dart';
 import 'package:sinae_flutter/widgets/appbar_action.dart';
+import 'package:sinae_flutter/utils/colors.dart';
+import 'package:sinae_flutter/drawer.dart';
 import 'widgets/list_products.dart';
 import 'widgets/list_categories.dart';
 
 class Productlist extends StatelessWidget {
-  const Productlist({Key key}) : super(key: key);
+  Productlist({Key key}) : super(key: key);
+
+  GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +20,19 @@ class Productlist extends StatelessWidget {
       init: ProductlistController(),
       builder: (controller) {
         return Scaffold(
+          key: _scaffoldKey,
           backgroundColor: AppColors.BACKGROUND,
+          drawer: Drawer(
+            child: drawerContents()
+          ),
           appBar: CustomAppBar(
             "Sinae Mall",
+            leadings: [
+              CustomAppBarAction(
+                () => _scaffoldKey.currentState.openDrawer(),
+                Feather.menu,
+              )
+            ],
             actions: [
               Obx(
                 () => CustomAppBarAction(
