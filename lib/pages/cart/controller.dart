@@ -2,18 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
+import 'package:intl/intl.dart';
 import 'package:sinae_flutter/utils/colors.dart';
 import 'package:sinae_flutter/controller.dart';
 import 'package:sinae_flutter/models/cart_item.model.dart';
 
 class CartController extends GetxController {
   AppController appController = Get.find();
+  var f = NumberFormat('###,###,###,###');
 
   String get total {
     double fold = appController.cartItems.value.fold(0, (subtotal, cartItem) {
       return subtotal + cartItem.product.price * cartItem.quantity;
     });
-    return fold.toStringAsFixed(0) + "\원";
+    return f.format(fold) + "\원";
   }
 
   deleteItem(CartItemModel cartItemModel) {

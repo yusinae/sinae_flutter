@@ -15,8 +15,9 @@ dependencies:
   flutter_icons:
   flutter_localizations:
     sdk: flutter
-  get: ^4.3.8 #required >> flutter run --no-sound-null-safety ^4.3.8
+  get: ^4.3.8  # getX : required >> flutter run --no-sound-null-safety ^4.3.8
   convert: ^3.0.1
+  intl: ^0.17.0  # number format
 
 dev_dependencies:
   flutter_test:

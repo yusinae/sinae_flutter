@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:intl/intl.dart';
 
 class ProductModel {
   ProductModel({
@@ -46,8 +47,9 @@ class ProductModel {
   set like(bool value) => _like.value = value;
   bool get like => _like.value;
 
+  var f = NumberFormat('###,###,###,###');
   String get price_unit {
-    return this.price.toStringAsFixed(0) + "\원";
+    return f.format(this.price) + "\원";
   }
 
 }
