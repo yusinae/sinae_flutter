@@ -1,12 +1,14 @@
 [
     {
         "key": "cate1",
-        "name": "Menu1",
-        "color": "#3AB54A"
+        "name": "Menu1"
     },
     {
         "key": "cate2",
-        "name": "Menu2",
-        "color": "#febf75"
+        "name": "Menu2"
+    },
+    {
+        "key": "cate3",
+        "name": "Menu3"
     }
 ]

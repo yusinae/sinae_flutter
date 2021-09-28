@@ -7,7 +7,6 @@ import 'package:sinae_flutter/utils/colors.dart';
 class ItemLike extends StatelessWidget {
   final ProductModel product;
   ItemLike(this.product);
-
   @override
   Widget build(BuildContext context) {
     return Positioned(
@@ -26,10 +25,10 @@ class ItemLike extends StatelessWidget {
             return Icon(
               Feather.heart,
               size: 18,
-              color: product.like ? AppColors.POINT : AppColors.LIGHT,
+              color: this.product.like ? AppColors.POINT : AppColors.LIGHT,
             );
           }),
-          onPressed: () => product.like = !product.like,
+          onPressed: () => this.product.like = !product.like,
         ),
       ),
     );

@@ -29,6 +29,7 @@ class ProductController extends GetxController {
         category: item["category"],
         price: item["price"],
         image: item["image"],
+        like: item["like"],
         description: item["description"],
       ));
       if(Get.arguments == "cart") addProduct();

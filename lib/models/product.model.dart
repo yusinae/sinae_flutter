@@ -9,6 +9,7 @@ class ProductModel {
     int price,
     String image,
     String description,
+    bool like,
   }) {
     this.id = id;
     this.name = name;
@@ -16,7 +17,7 @@ class ProductModel {
     this.price = price;
     this.image = image;
     this.description = description;
-    this.like = false;
+    this.like = like;
   }
 
   RxInt _id = RxInt(0);

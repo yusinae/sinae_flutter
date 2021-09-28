@@ -47,6 +47,7 @@ class HomeController extends GetxController {
               category: product["category"],
               price: product["price"],
               image: product["image"],
+              like: product["like"],
             ))
         .toList();
   }
