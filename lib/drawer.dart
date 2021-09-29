@@ -27,7 +27,15 @@ drawerContents() => (
         dense:true,
       ),
       ListTile(
-        title: const Text('상품목록', style: TextStyle(
+        title: const Text('상품목록11', style: TextStyle(
+          fontSize: 14.0,
+        )),
+        onTap: (){Get.toNamed("/");},
+        contentPadding: EdgeInsets.symmetric(vertical: 0.0, horizontal: 20.0),
+        dense:true,
+      ),
+      ListTile(
+        title: const Text('상품목록22', style: TextStyle(
           fontSize: 14.0,
         )),
         onTap: (){Get.toNamed("/");},

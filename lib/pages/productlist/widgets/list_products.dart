@@ -6,7 +6,7 @@ import 'item_products.dart';
 
 class ListProducts extends StatelessWidget {
   final ProductlistController controller = Get.find();
-  final double itemHeight = 130;
+  final double itemHeight = Get.width / 2.7;
   final double itemWidth = Get.width / 2 - 100;
 
   @override
@@ -15,10 +15,10 @@ class ListProducts extends StatelessWidget {
       () {
         return SliverGrid(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              mainAxisSpacing: 14.0,
-              crossAxisSpacing: 14.0,
-              childAspectRatio: itemWidth / itemHeight),
+            crossAxisCount: 2,
+            mainAxisSpacing: 14.0,
+            crossAxisSpacing: 14.0,
+            childAspectRatio: itemWidth / itemHeight),
           delegate: SliverChildBuilderDelegate(
             (BuildContext context, int index) {
               return ListItem(controller.products.elementAt(index));

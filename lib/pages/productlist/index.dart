@@ -26,7 +26,7 @@ class Productlist extends StatelessWidget {
             child: drawerContents()
           ),
           appBar: CustomAppBar(
-            "Sinae Mall",
+            "Sinae mall",
             leadings: [
               CustomAppBarAction(
                 () => _scaffoldKey.currentState.openDrawer(),

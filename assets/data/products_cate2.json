@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "광택감이 돋보이는 베이직 셔츠",
-        "category": "cate1",
+        "category": "cate2",
         "type": "type1",
         "price": 16900,
         "image": "assets/images/img1.png",
@@ -12,7 +12,7 @@
     {
         "id": 2,
         "name": "베이직 오픈카라 블라우스",
-        "category": "cate1",
+        "category": "cate2",
         "type": "type1",
         "price": 18200,
         "image": "assets/images/img1.png",
@@ -22,7 +22,7 @@
     {
         "id": 3,
         "name": "링클프리 블라우스",
-        "category": "cate1",
+        "category": "cate2",
         "type": "type1",
         "price": 18600,
         "image": "assets/images/img1.png",
@@ -32,7 +32,7 @@
     {
         "id": 4,
         "name": "3기장 H라인 스커트",
-        "category": "cate1",
+        "category": "cate2",
         "type": "type1",
         "price": 21000,
         "image": "assets/images/img1.png",
@@ -42,7 +42,7 @@
     {
         "id": 5,
         "name": "고퀄리티 슬림일자핏 슬랙스",
-        "category": "cate1",
+        "category": "cate2",
         "type": "type1",
         "price": 21200,
         "image": "assets/images/img1.png",
@@ -52,8 +52,8 @@
     {
         "id": 6,
         "name": "브이넥 배색 긴팔 가디건",
-        "category": "cate1",
-        "type": "type1",
+        "category": "cate2",
+        "type": "type2",
         "price": 16900,
         "image": "assets/images/img1.png",
         "like": false,
@@ -62,7 +62,7 @@
     {
         "id": 7,
         "name": "셔츠형 롱 플레어 원피스",
-        "category": "cate1",
+        "category": "cate2",
         "type": "type2",
         "price": 26800,
         "image": "assets/images/img2.png",
@@ -72,7 +72,7 @@
     {
         "id": 8,
         "name": "프린팅 루즈핏 맨투맨",
-        "category": "cate1",
+        "category": "cate2",
         "type": "type2",
         "price": 13200,
         "image": "assets/images/img2.png",
@@ -82,7 +82,7 @@
     {
         "id": 9,
         "name": "슬림핏 라운드넥 긴팔 티셔츠",
-        "category": "cate1",
+        "category": "cate2",
         "type": "type2",
         "price": 11500,
         "image": "assets/images/img2.png",

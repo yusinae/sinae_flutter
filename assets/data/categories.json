@@ -1,14 +1,32 @@
 [
     {
         "key": "cate1",
-        "name": "Menu1"
+        "type": "type1",
+        "name": "type1txt"
+    },
+    {
+        "key": "cate1",
+        "type": "type2",
+        "name": "type2txt"
+    },
+    {
+        "key": "cate1",
+        "type": "type3",
+        "name": "type3txt"
     },
     {
         "key": "cate2",
-        "name": "Menu2"
+        "type": "type1",
+        "name": "type1txt"
     },
     {
-        "key": "cate3",
-        "name": "Menu3"
+        "key": "cate2",
+        "type": "type2",
+        "name": "type2txt"
+    },
+    {
+        "key": "cate2",
+        "type": "type3",
+        "name": "type3txt"
     }
 ]

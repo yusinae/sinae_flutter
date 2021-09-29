@@ -31,6 +31,8 @@ flutter:
     - assets/images/img1.png
     - assets/images/img2.png
     - assets/data/products.json
+    - assets/data/products_menu1.json
+    - assets/data/products_menu2.json
     - assets/data/categories.json
     - assets/data/board.json
   fonts:
